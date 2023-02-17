@@ -1,62 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+<!DOCTYPE html><!--Usando Comentários, marcação da versão do documento HTML-->
+<html lang="pt-br"><!--Idioma definido como portugues brasil-->
+<head><!--Cabeçalho do site, não visível aos usuários-->
+    <meta charset="UTF-8"><!--Comunica qual é o formato de codificação dos caracteres que compoem o documento HTML-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidade com Internet Explorer, o navegador é forçado a renderizar a versão mais recente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Responsividade do documento, ajusta a tela em outros dispositivos-->
+    <title>Módulo I - Primeiros Passos com HTML</title><!--Define o título que fica na aba do documento-->
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+<body bgcolor="#e0e1dd" style="font-family: monospace; font-size: 18px"><!--O atributo bgcolor serve para mudar a cor do fundo do site-->
+ <!--Já o atributo Style, na tag acima, define estilo css ao hmtl, font-family na tag body definiu um estilo de fonte para tudo o que estiver dentro dela-->  
+ <!--Font-size determina o tamanho da fonte do documento em px pixels--> 
+    <h1 style="text-align: center;" id="inicio"><!--Text-align centraliza o texto-->
+        <font color="#415a77" face="monospace"> Módulo 1 - Primeiros Passos com HTML</font> <!--A tag Font define parâmetros relacionados a fonte, está obsoleta-->
+    </h1>
+    
     <hr />
+    
+    <h2 id="indice" style="color: #415a77;font-size: 25px;">Índice</h2>  
+    <ul><!--Lista não ordenada com tamanho de fonte 18 pixels-->
+        <li><a href="#hc">História dos computadores</a></li><!--Faz link com o ID hc-->
+        <li><a href="#cs">O que são <i>Clients</i>?</a></li><!--Faz link com o ID cs-->
+        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li><!--Faz link com o ID html-->
+        <li><a href="#lis">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li><!--Faz link com o ID lis-->
+        <li><a href="#ref">Links de referências</a></li><!--Faz link com o ID ref-->
+       </ul>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+       <hr />
+   <!--Início de História dos Computadores-->    
+    <h2 id="hc">História dos <mark>computadores</mark></h2><!--Define identificador como hc para link no documento-->
+    
+   <p>
+      O primeiro computador criado foi o 
+      <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank" title="A história do ENIAC, o primeiro computador do mundo">ENIAC</a><sup>*</sup>
+      em 1946 e, junto com 
+      <a href="https://www.tecmundo.com.br/historia/40576-colossus-heroi-de-guerra-e-um-dos-primeiros-computadores-do-mundo.htm" target="_blank" title="Colossus: herói de guerra e um dos primeiros computadores do mundo">Colossus</a><sup>*</sup>, 
+      fazem parte da primeira geração de computadores que eram operados por válvulas.  
+   </p>
+   <p>
+      Depois, temos a segunda geração que foi marcada pelos <strong><i>transistores</i></strong> e durou de 1959 até 1965. 
+      Já na terceira geração surgiram os <strong><i>circuitos integrados</i></strong> e ocorreu de 1965 até 1970.  
+   </p>
+   <p>
+      A partir de 1971 temos a 4 geração que dura até hoje, foi nela que os computadores evoluíram tanto que se tornavam o que conhecemos hoje.  
+   </p>
+   <p>
+      Há quem diga que estamos vivendo a 5 geração que seria marcada pelas <strong><i>criptomoedas, metaverso e 
+      <abbr title="Inteligência artificial">IA</abbr></i></strong>. <!--Tag abbr faz uma abreviação do texto e ao colocar cursor vemos o significado completo-->
+   </p>
+   <a title="Clique para voltar ao Início" href="#inicio"><button> Voltar para o Início</button></a><!--Botão de voltar para o início-->
+   <!--Fim de História dos Computadores--> 
+    <hr />
+   <!--Início de o que são Clients e servers?--> 
+    <h2 id="cs">O que são <mark><i>Clients</i> e <i>Servers</i>?</h2></mark>
+    <p>
+      Os termos Client e Server vem do modelo de arquitetura distribuída chamado client-server, ou em tradução  
+
+    <a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor"title="Modelo cliente–servidor" target="_blank">cliente-servidor</a><sup>*</sup>.  
+    </p>
+    <p>Nesse modelo temos o <strong><u>Cliente (Client)</u></strong> que seria a parte que faz requisições de informações para o 
+      <strong><u>Servidor (Server)</u></strong> que, por sua vez, analisa a requisição e retorna uma 
+      resposta ao cliente com os dados solicitados. 
+   </p>
+   <a title="Clique para voltar ao Início" href="#inicio"><button> Voltar para o Início</button></a><!--Botão de voltar para o início-->
+   <!--Fim de o que são Clients e servers?--> 
+    <hr />
+   <!--Início de estrutura básica HTML--> 
+    <h2 id="html">Como é uma estrutura básica de um <mark>HTML?</mark></h2> 
+    <p>A <a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html" title="Iniciando o código básico de HTML" target="_blank">estrutura básica</a><sup>*</sup>
+       da Linguagem de Marcação de Hipertexto HTML, se consiste em 3 tags principais, sendo elas: </p>
+      <ol>
+         <li><strong>HTML </strong>– Define o documento HTML;</li>
+         <li><strong>HEAD  </strong>– Define o cabeçalho da página, que contém informações para o navegador e que não aparecerá para o usuário;</li>
+         <li><strong>BODY   </strong>– Define o corpo do documento HTML, ou seja, todo o conteúdo do seu site que será mostrado ao usuário final;</li>
+      </ol>
+      <a title="Clique para voltar ao Início" href="#inicio"><button> Voltar para o Início</button></a><!--Botão de voltar para o início-->
+   <!--Fim de estrutura básica HTML-->    
+    <hr />
+   <!--Início de listas-->   
+    <h2 id="lis">Entendendo a diferença entre <mark>listas ordenadas</mark> e <mark>não ordenadas</mark></h2>
+    <p>Em HTML podemos fazer dois tipos de <a target="_blank" title="Listas em HTML" href="https://www.devmedia.com.br/listas-em-html/23853">lista</a><sup>*</sup>, sendo elas:</p> 
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li><strong>Ordenada</strong> – Utiliza a tag <strong><i>ol</i></strong></li>
+      <li><strong>Não ordenada</strong> – Utiliza a tag <strong><i>ul</i></strong></li>
     </ul>
+    
+      
+    <p>As <strong>listas ordenadas</strong>, como o próprio nome diz, seguem uma ordem e são mostradas 
+      com números em cada item da lista, por exemplo: </p>
+      <ol>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+      </ol>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>Já em listas não ordenadas são mostrados pontos ao lado dos itens, como no exemplo: </p>
+      <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+      </ul>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <a title="Clique para voltar ao Início" href="#inicio"><button> Voltar para o Início</button></a><!--Botão de voltar para o início-->
+    <hr />
+   <!--Fim de listas-->     
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="ref"><mark>Links de referências</mark> <sub><small><del>Lista de sites utlizados</del></small></sub></h2><!--A tag del risca o texto no meio como se fosse um texto deletado-->
+    
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="http://dio.me" target="_blank">Site da DIO</a></li>
+        <li><a href="http://w3c.org" target="_blank">Site da W3C</a></li>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">Site da História do ENIAC</a></li>
+        <li><a href="https://www.tecmundo.com.br/historia/40576-colossus-heroi-de-guerra-e-um-dos-primeiros-computadores-do-mundo.htm" target="_blank">Site da História do Colossus</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor" target="_blank">Site sobre modelo cliente-servidor</a></li>
+        <li><a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html" target="_blank">Site sobre Estrutura Básica do HTML</a></li>
+        <li><a href="https://www.devmedia.com.br/listas-em-html/23853" target="_blank">Site sobre Listas em HTML</a></li>
+        <li><a href="https://www.youtube.com/watch?v=3oSIqIqzN3M" target="_blank">Videoaula de HTML</a></li>
+        <li><a href="https://www.youtube.com/watch?v=4Gq3WW6FwVA" target="_blank">Videoaula de HTML e CSS</a></li>
     </ul>
+    <a title="Clique para voltar ao Início" href="#inicio"><button> Voltar para o Início</button></a><!--Botão de voltar para o início-->
 
 </body>
 </html>
