@@ -1,62 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Módulo 1 - Primeiros Passos com HTML</title>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+<body style="background-color: #D3D3D3; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: .9rem;">
+   <blockquote>
+      <h1 id="topo" style="text-align: center;">Módulo 1 - Primeiros Passos com <abbr
+            title="Hyper Text Markup Language">HTML</abbr><sup>*</sup></h1>
+      <p style="text-align: center; font-size: 1.1rem;"><sub>- Introdução ao desenvolvimento web com HTML e os conceitos
+            iniciais para construção de páginas estáticas e dinâmicas -</sub></p>
+      <hr />
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <font color="#2F4F2F"><h2>Índice</h2></font>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <ul>
+         <li><a href="#historia">A História dos Computadores</a></li>
+         <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+         <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+         <li><a href="#estrutura-basica">A Estrutura Básica do HTML</a></li>
+         <li><a href="#diferenca-ol-ul">A Diferença entre Listas Ordenadas e Não Ordenadas</a></li>
+         <li><a href="#referencias">Links de Referência</a></li>
+      </ul>
+      <hr />
+      <h2 id="historia">A História dos Computadores</h2>
+      <p>
+         Uma jornada de <i>inovação</i> e <i>criatividade humana</i>, ela começou com dispositivos mecânicos projetados
+         para cálculos específicos e evoluiu para a era dos computadores eletrônicos, que revolucionaram a maneira como
+         processamos informações. Desde a criação dos primeiros computadores programáveis até o surgimento dos PCs e a
+         conectividade global proporcionada pela internet, a história dos computadores testemunhou <strong>mudanças
+         profundas na sociedade</strong>. A miniaturização dos componentes eletrônicos, a evolução dos sistemas
+         operacionais e os avanços na inteligência artificial têm impulsionado a <strong>rápida evolução dos
+         computadores</strong>, tornando-os ferramentas <mark><strong>indispensáveis</strong></mark> em nossas vidas
+         diárias.
+      </p><img src="img/historia-pc.jpg" alt="Evolução do computador ao longo do tempo" width="400" height="250">
+      <br><small style="color: #525254;">Miniaturização do Computador ao longo da história.</small>
+      <p><sub><a href="#topo">[Topo]</a></sub></p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <hr />
+      <h2 id="clients">O que são <i>Clients</i>?</h2>
+      <p>
+         Clients são os <i>elementos</i> que <strong>utilizam e interagem com os serviços ou dados fornecidos por
+         servidores em uma arquitetura de rede</strong>. <br>Eles podem ser <u>computadores, smartphones, tablets ou
+         qualquer outro dispositivo que acesse a rede</u>. <br>Os clients são a <i>interface</i> através da qual os
+         <strong>usuários acessam aplicativos, sites ou serviços online</strong>. <br>Eles enviam solicitações para os
+         servidores e exibem as respostas, tornando possível a interação do usuário com os recursos disponibilizados
+         pelos servidores.
+      </p>
+      <p><a href="#topo">[Topo]</a></p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h2 id="servers">O que são <i>Servers</i>?</h2>
+      <p>
+         Servers são <strong>poderosos computadores</strong> projetados para atender a várias solicitações dos
+         <i>clients</i> em uma rede. <br>Eles são <strong>responsáveis</strong> por <u>armazenar, processar e
+         disponibilizar dados e serviços</u> para os <i>usuários</i>. <br>Servidores podem ser <strong>físicos ou
+         virtuais</strong>, e são executados em data centers ou em nuvem. <br>Eles são <strong>essenciais</strong>
+         para a <u>hospedagem de websites, gerenciamento de banco de dados, entrega de conteúdo</u>, e muitos outros
+         serviços essenciais da internet.
+      </p><img src="img/client-server.png" alt="Estrutura client-server" width="300" height="150">
+      <br><small style="color: #525254;">Diagrama de rede de computadores de clientes comunicando com um servidor através da Internet.</small>
+      <p><a href="#topo">[Topo]</a></p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <hr />
+      <h2 id="estrutura-basica">A Estrutura Básica do HTML</h2>
+      <p>
+         A estrutura básica de um documento HTML é composta pela declaração <strong>&lt;!DOCTYPE&gt;</strong>, seguida
+         da tag <strong>&lt;html&gt;</strong> que envolve todo o conteúdo. <br>Dentro da tag &lt;html&gt;, estão os
+         elementos <strong>&lt;head&gt;</strong> e <strong>&lt;body&gt;</strong>. <br>O &lt;head&gt; contém informações
+         relevantes para o documento, como o título da página, metadados e referências a arquivos externos. <br>O &lt;body&gt;
+         contém o conteúdo visível da página, como textos, imagens, links e outros elementos HTML. <br>Seguir a
+         estrutura básica é crucial para garantir a compatibilidade e correta interpretação do documento em diferentes
+         navegadores e dispositivos.
+      </p><img src="img/estrutura-basica-html.jpg" alt="Estrutura Básica do HTML" width="300" height="200">
+      <br><small style="color: #525254;">Esquema da estrutura básica do HTML.</small>
+      <p><a href="#topo">[Topo]</a></p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+      <hr />
+      <h2 id="diferenca-ol-ul">A Diferença entre Listas Ordenadas e Não Ordenadas</h2>
+      <p>
+         A principal diferença entre as listas ordenadas (&lt;ol&gt;) e as listas não ordenadas (&lt;ul&gt;) está na
+         forma de apresentação dos itens. <br>Nas listas ordenadas, os itens são organizados em uma sequência numérica,
+         como:
+      <ol>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+      </ol>
+         Já nas listas não ordenadas, os itens são apresentados com marcadores, como:
+      <ul>
+         <li>Item A</li>
+         <li>Item B</li>
+         <li>Item C</li>
+      </ul><a href="#topo">[Topo]</a></p>
 
+      <hr />
+      <h2 id="referencias"><del>Fontes</del> Links de Referência</h2>
+      <ul>
+         <li>
+            <a href="https://www.dio.me/" target="_blank">DIO - Cursos de Programação</a>
+         </li>
+         <li>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools - HTML</a>
+         </li>
+         <li>
+            <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">Toda Materia
+               - Historia e Evolucao dos Computadores</a>
+         </li>
+         <li>
+            <a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor" target="_blank">Wikipedia - Modelo
+               Cliente-Servidor</a>
+         </li>
+      </ul>
+      <p><a href="#topo">[Topo] </a></p>
+   </blockquote>
 </body>
+
 </html>
